@@ -8,7 +8,10 @@ import L from '@/views/authentication/Lsidebar.vue'
 </script>
 
 <template>
+
+<header class="bg-white border-b shadow-sm fixed top-0 inset-x-0 z-50">
      <T/>
+     </header>
      <div class="pt-16 max-w-7xl mx-auto flex flex-col lg:flex-row">
         <aside class="hidden lg:block lg:w-64 bg-white border-r  space-y-8">
      <L/>

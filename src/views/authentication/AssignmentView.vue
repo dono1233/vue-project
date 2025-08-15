@@ -4,7 +4,7 @@
     <div class="bg-gray-100 text-gray-800 antialiased">
     <!-- Top Nav -->
     
-    
+    <div class="pt-16 max-w-7xl mx-auto flex flex-col lg:flex-row">
       <!-- Left Navigation Sidebar -->
      
       <!-- Main Content -->
@@ -90,7 +90,7 @@
           </div>
         </section>
       </main>
-   
+    </div>
     <!-- JS for profile dropdown -->
    
   </div>

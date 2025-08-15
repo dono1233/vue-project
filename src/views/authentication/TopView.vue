@@ -1,4 +1,7 @@
 <script setup>
+import {ref} from 'vue'
+const togg = ref(false);
+
 </script>
 <template>
      <header class="bg-white border-b shadow-sm fixed top-0 inset-x-0 z-50">
@@ -40,17 +43,17 @@
             <span class="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-4 h-4 flex items-center justify-center">2</span>
           </button>
           <div class="relative">
-            <button id="profile-button" class="flex items-center focus:outline-none">
+            <button @click="togg = !togg" id="profile-button" class="flex items-center focus:outline-none">
               <img
                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?auto=format&fit=facearea&facepad=3&w=64&h=64&q=80"
                 alt="User avatar"
                 class="w-8 h-8 rounded-full"
               />
             </button>
-            <div id="profile-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-10">
-              <a href="profile.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">View Profile</a>
+            <div v-show="togg" id="profile-dropdown"  class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg py-2 z-10 ">
+              <router-link to="/user/profile" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">View Profile</router-link>
               <a href="#settings" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Settings</a>
-              <a href="#logout" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Log Out</a>
+              <router-link to="/login" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Log Out</router-link>
             </div>
           </div>
         </div>

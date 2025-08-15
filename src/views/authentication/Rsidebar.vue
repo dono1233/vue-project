@@ -11,8 +11,8 @@
               class="w-12 h-12 rounded-full"
             />
             <div>
-              <h4 class="font-semibold text-gray-800">Alex Johnson</h4>
-              <p class="text-sm text-gray-500">Computer Science, Class of 2026</p>
+              <h4 class="font-semibold text-gray-800">Martos Nathaniel V.</h4>
+              <p class="text-sm text-gray-500">Bachelor of Science in Information Technology</p>
             </div>
           </div>
           <div class="mt-4 text-gray-600 text-sm leading-snug">
